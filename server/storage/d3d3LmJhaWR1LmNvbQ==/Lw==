@@ -1,0 +1,43 @@
+<?php
+$htmls=<<<CODE
+
+<style>
+.mpanel{
+	padding:80px;
+	background:#BBB;
+}
+</style>
+
+<div class="mpanel">  
+           <ul>
+           <li>
+           	Cloudex Test OK ...
+           </li>
+           
+           </ul>
+</div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CODE;
+echo htmltojs('tmp_htmls',$htmls);
+
+?>
+
+
+
+
+$('body').append(tmp_htmls);
+

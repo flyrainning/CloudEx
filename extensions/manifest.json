@@ -1,0 +1,43 @@
+﻿{
+   "name": "CloudEx",
+   "description": "CloudEx云插件。",
+   "icons": {
+      "128": "images/icon1.png"
+
+   },
+
+	"background": {
+		"page": "background.html"
+	},
+
+"browser_action": {
+      "default_icon": "images/icon3.png",
+      "default_title": "CloudEx云插件",
+      "default_popup":"popup.html"
+      
+   },
+   "permissions": [ "bookmarks", "tabs", "notifications", "cookies", "contextMenus", "http://*/*","https://*/*","clipboardRead","clipboardWrite" ],
+
+   
+   "web_accessible_resources": [
+		"popup.html"
+		
+	],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+ 
+     "content_scripts": [
+
+    {
+    "matches": ["http://*/*","https://*/*"],
+    "js": ["js/inject.js"],
+    "run_at": "document_end",
+    "all_frames":true
+    }
+    
+    ],
+   
+   "manifest_version": 2,
+
+   
+   "version": "0.8"
+}

@@ -1,0 +1,107 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/contextmenu.js"></script>
+<script type="text/javascript" src="js/jqueryui/jquery-ui.min.js"></script>
+<link href="js/jqueryui/2/jquery-ui.min.css" rel="stylesheet">
+<style>
+.urlarea{
+width:100%;
+height:50px;
+
+
+}
+.alldiv{
+padding:10px;
+}
+html{
+height:100px;
+}
+body
+{
+	font: normal 12px arial, tahoma, helvetica, sans-serif;
+	margin:0;
+	padding:0px;
+	width:450px;
+	height:100px;
+	background-color:#EFF5FB;
+	
+}
+.ui-accordion-content{
+padding:1em 1em;
+}
+.menutable{
+width:180px;
+}
+.href{
+cursor: pointer;
+
+}
+.ui-menu {
+width: 100px;
+
+}
+td{
+font-size:12px;
+}
+.urltd{
+width:120px;
+ vertical-align:top;
+}
+.urlhighlight a{
+
+color:#006400;
+}
+</style>
+</head>
+<body><div class="alldiv">
+<div id="showmessages" class="ui-widget" style="display:none;margin-bottom:10px;" title="点击关闭此提示">
+	<div class="ui-state-highlight ui-corner-all" style="padding: 0 .7em;">
+		<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+		<strong>提示: </strong><span id="msgdtl"></span></p>
+	</div>
+</div>
+
+<div id="accordion">
+
+	<h3></h3>
+
+	<div>
+		
+		<div style="position:relative;height:35px;margin-top:15px;margin-bottom:15px;">
+			<div style="position:relative;float:left;">
+				<div class="buttonset">
+				<br /><br />
+				CloudEx云扩展<br />
+				
+				
+				
+				
+				用户：<input type="text" id="user" /><br /><br />
+				密码：<input type="password" id="pwd" /><br /><br />
+				
+				<input type="radio" id="refopen" name="radio" /><label for="refopen">开启</label>
+				<input type="radio" id="refclose" name="radio" /><label for="refclose">关闭</label><br /><br />
+				<button id="btn_set"> 确定 </button>
+				
+				
+				
+				<br /><br /><br />
+				
+
+				</div>
+			</div>
+			
+		</div>
+	
+
+	
+	
+	</div>
+</div>
+
+</div></body>
+</html>
